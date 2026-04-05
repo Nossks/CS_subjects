@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown Timer</title>
+</head>
+<body>
+
+  <h1>Countdown Timer</h1>
+
+  <input type="number" id="seconds" placeholder="Enter seconds">
+  <button id="start">Start</button>
+
+  <p id="timer">0</p>
+
+  <script>
+    let interval;
+    document.getElementById("start").addEventListener("click", function () {
+      clearInterval(interval); // Clear previous countdown
+
+      let seconds = parseInt(document.getElementById("seconds").value);
+      let timerDisplay = document.getElementById("timer");
+
+      if (isNaN(seconds) || seconds <= 0) {
+        alert("Please enter a valid number greater than 0");
+        return;
+      }
+
+      timerDisplay.textContent = seconds;
+
+      interval = setInterval(function () {
+        seconds--;
+        timerDisplay.textContent = seconds;
+
+        if (seconds <= 0) {
+          clearInterval(interval);
+          timerDisplay.textContent = "Time's up!";
+        }
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>

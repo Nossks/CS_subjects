@@ -1,0 +1,98 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('path/to/black-hole-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d4af37; /* Gold color for a touch of elegance */
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+button, input, textarea {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #1e1e1e; /* Dark background for buttons */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444; /* Lighter on hover */
+}
+
+#voice-button {
+    background-color: #ff5722; /* Highlight color for the voice button */
+}
+
+#voice-button:hover {
+    background-color: #e64a19;
+}
+
+#image-input {
+    background: #333; /* Dark background for file input */
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background: #333;
+    color: #fff;
+    resize: vertical;
+}
+
+#search-button {
+    background-color: #2196f3; /* Blue color for the search button */
+    color: #fff;
+    margin-top: 15px; /* Margin to separate from other elements */
+}
+
+#search-button:hover {
+    background-color: #1976d2;
+}
+
+.output-section {
+    margin-bottom: 20px; /* Space between output section and input section */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

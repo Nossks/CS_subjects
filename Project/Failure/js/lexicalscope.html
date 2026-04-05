@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+    // let orange=document.querySelector("#orange");
+    // let green=document.querySelector("#green");
+
+    // orange.addEventListener("click",(e)=>{
+    //     document.body.style.background="orange";
+    // })
+
+    //gemeric code
+
+
+    function changecolor(color){
+
+        return (e)=>{document.body.style.background=color};          //usko usi trh function bna diuya
+    }
+
+    document.querySelector("#orange").addEventListener("click",changecolor("orange"));
+    document.querySelector("#green").addEventListener("click",changecolor("green"));
+</script>
+</html>

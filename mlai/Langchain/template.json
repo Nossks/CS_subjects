@@ -1,0 +1,16 @@
+{
+    "name": null,
+    "input_variables": [
+        "name",
+        "speciality"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "Please brutally roast this person name {name} and he/she thinks their speciality  is {speciality} but lets keep it short 1-2 lines and tight when i say tight i mean it brutally roast just go for it",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}

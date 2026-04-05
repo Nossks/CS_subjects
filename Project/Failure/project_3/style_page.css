@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    color:coral;
+}
+#abc{
+    color:aquamarine;
+}
+#page {
+    background-image: url('https://helios-i.mashable.com/imagery/articles/02n5vDFGjNZhZWI19y2Ulr2/hero-image.fill.size_1248x702.v1623370936.jpg');
+    background-repeat: no-repeat; 
+    background-size:cover; 
+    background-size:contain;
+  }
+body{
+    text-align: center;
+}
+#navbar{
+    color: white;
+    background-color: black;
+}
+a{
+    margin-right:250px;
+    text-decoration: none;
+    color:white;
+}
+  

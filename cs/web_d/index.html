@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="name">name
+            <input type="text" name="name" id="name">
+        </label>
+
+        <br>
+
+        <label for="email">email</label>
+        <input type="text" name="email" id="email">
+
+        <br><br>Gender:<br>
+        <label for="male">male
+            <input type="radio" name="Gender" id="male" value="male">
+        </label>
+        <label for="female">female
+            <input type="radio" name="Gender" id="female" value="female">
+        </label>
+
+        <br><br>hobbies:<br>
+        <label for="cricket">cricket
+            <input type="checkbox" name="hobbies" value="cricket" id="cricket">
+        </label>
+        <label for="football">football
+            <input type="checkbox" name="hobbies" value="football" id="football">
+        </label>
+        <label for="chess">chess
+            <input type="checkbox" name="hobbies" value="chess" id="chess">
+        </label>
+
+        <br><br>
+        <label for="dob">dob
+            <input type="date" name="dob" id="dob">
+        </label>
+
+        <br><br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+
+    <p id="result">
+
+    </p>
+</body>
+<script src="script.js"></script>
+</html>

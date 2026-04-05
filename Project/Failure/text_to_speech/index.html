@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech and Speech-to-Text</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text-to-Speech and Speech-to-Text</h1>
+        <label for="language-select">Select Language:</label>
+        <select id="language-select">
+            <option value="hi-IN">Hindi (India)</option>
+            <option value="en-US">English (United States)</option>
+            <option value="ta-IN">Tamil (India)</option>
+        </select>
+        <textarea id="text-input" placeholder="Press & listen..."></textarea>
+        <button id="speak-btn">SPEAK</button>
+        <button id="listen-btn">LISTEN</button>
+        <textarea id="text-output" placeholder="listening on pressing..."></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

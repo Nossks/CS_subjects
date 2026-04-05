@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit and remove and add</title>
+</head>
+<body>
+    <ul class="lang">
+        <li>javascript</li>
+        <li>python</li>
+    </ul>
+</body>
+<script>
+    //add
+    let add1=(name)=>{
+        let li=document.createElement("li");
+        li.innerHTML=`${name}`;
+        document.querySelector(".lang").appendChild(li);
+    }
+    add1("c++");
+    function add2(name){
+        let li=document.createElement("li");
+        li.appendChild(document.createTextNode(name));
+        document.querySelector(".lang").appendChild(li);
+    }
+    add2("golang");
+
+    //edit
+    let node=document.querySelector("li:nth-child(4)");
+    let nn=document.createElement("li");
+    nn.textContent="java 8";
+    node.replaceWith(nn);
+
+    //remove
+    let rm=document.querySelector("li:last-child");
+    rm.remove();
+
+    
+</script>
+</html>

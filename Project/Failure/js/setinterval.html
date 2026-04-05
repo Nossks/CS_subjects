@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript by chaudhary shahab</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const fun=(arg)=>{
+        console.log(`${arg} hi and time is`+Date.now());
+    }
+    let intervalid;
+    document.querySelector("#start").addEventListener("click",(e)=>{
+        intervalid=setInterval(fun,2000,"aryan");
+    })
+
+    document.querySelector("#stop").addEventListener("click",(e)=>{
+        clearInterval(intervalid);
+    })
+
+</script>
+</html>

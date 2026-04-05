@@ -1,0 +1,19 @@
+body{
+    background-color:darkkhaki;
+}
+#ibm{
+    color:brown;
+    text-align:center;
+    text-decoration:dotted underline;
+    font-family: roboto;
+    text-transform: capitalize;
+}
+.class{
+    color:crimson;
+}
+#ibo{
+    color:black;
+}
+body{
+    text-align:center;
+}
